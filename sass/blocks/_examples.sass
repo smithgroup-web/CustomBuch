@@ -1,0 +1,60 @@
+.examples
+    padding-top: 100px
+    padding-bottom: 30px
+    position: relative
+    @media screen and ( max-width: 1199px )
+        padding-top: 50px
+    @media screen and ( max-width: 767px )
+        padding-top: 0
+    &-content
+        position: relative
+    &-swiper
+        margin-top: 50px
+        .swiper-slide
+            cursor: pointer
+            & img
+                width: 100%
+                @media screen and ( min-width: 1600px )
+                    width: 80%
+                    display: block
+                    margin: 0 auto
+                @media screen and ( max-width: 1199px )
+                    width: 50%
+                    display: block
+                    margin: 0 auto
+                @media screen and ( max-width: 767px )
+                    width: 70%
+    &-arrow
+        position: absolute
+        z-index: 1
+        cursor: pointer
+        &_prev
+            left: 32%
+            top: 50%
+            transform: translateY(-50%)
+            @media screen and ( max-width: 1199px )
+                left: 22%
+            @media screen and ( max-width: 767px )
+                left: 10%
+        &_next
+            right: 32%
+            top: 50%
+            transform: translateY(-50%)
+            @media screen and ( max-width: 1199px )
+                right: 22%
+            @media screen and ( max-width: 767px )
+                right: 10%
+    &-bg
+        position: absolute
+        &_red
+            top: 50px
+            left: 0
+            @media screen and ( max-width: 767px )
+                width: 50%
+                top: -200px
+        &_purple
+            bottom: -500px
+            right: -150px
+            @media screen and ( max-width: 767px )
+                width: 50%
+                right: 100px

@@ -1,0 +1,58 @@
+@import 'fonts.sass'
+@import 'blocks/_header.sass'
+@import 'blocks/_intro.sass'
+@import 'blocks/_about.sass'
+@import 'blocks/_examples.sass'
+@import 'blocks/_contacts.sass'
+@import 'blocks/_footer.sass'
+@import 'blocks/_popup.sass'
+
+html
+    overflow-x: hidden
+    &.lock
+        overflow: hidden
+body
+    overflow-x: hidden
+.title
+    padding-top: 40px
+    position: relative
+    &__main
+        font-family: "Intro"
+        font-size: 64px
+        line-height: 64px
+        text-align: center
+        margin-bottom: 50px
+        @media screen and ( max-width: 767px )
+            font-size: 36px
+            line-height: 36px
+        @media screen and ( max-width: 375px )
+            font-size: 32px
+            line-height: 32px
+    &__sub
+        font-family: "Intro"
+        font-size: 144px
+        line-height: 144px
+        opacity: 0.2
+        text-align: center
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        background: linear-gradient(90deg ,rgba(37, 39, 53, 0) 0%, #252735 29.69%, #252735 69.27, rgba(37, 39, 53, 0) 100%)
+        -webkit-background-clip: text
+        background-clip: text
+        -webkit-text-fill-color: transparent
+        @media screen and ( max-width: 767px )
+            font-size: 72px
+            line-height: 72px
+            top: 25px
+        @media screen and ( max-width: 375px )
+            top: 20px
+    & .subtitle
+        font-family: 'Averta'
+        font-size: 20px
+        line-height: 25px
+        color: #000
+        text-align: center
+        max-width: 465px
+        margin: 0 auto
